@@ -15,7 +15,7 @@ Test your memory by repeating the sequence of colors that Simon shows you. Each 
 ✅ Simple, fun, and addictive!  
 
 🖼️ Preview  
-<img width="1356" height="837" alt="Screenshot 2025-09-24 195000" src="https://github.com/user-attachments/assets/e7f9e58c-39b0-4195-a836-64b318fd30ac" />
+![image alt](https://github.com/md-yaseen32/SIMON-SAY-GAME/blob/main/Screenshot%202026-02-12%20224652.png?raw=true)
 
 
 🛠️ Tech Stack  
