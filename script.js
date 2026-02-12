@@ -64,12 +64,26 @@ function checkAns(idx){
             setTimeout(levelUp,1000);
         }
     }else{
-        h2.innerHTML = `Game Over! Your Score: <b>${level}</b> <br>Press Any Key to Start`;
+        // Show game over message with score
+        h2.innerHTML = `🎮 <b>GAME OVER!</b> 🎮<br><br>🏆 Your Score: <b>${level}</b> 🏆<br><br>Press Any Key to Start Again`;
+        
+        // Flash red background for game over effect
         document.body.style.background = "linear-gradient(135deg, #ff4757, #ff6348)";
+        
+        // Add shake animation to buttons
+        let allBtns = document.querySelectorAll(".btn");
+        allBtns.forEach(btn => {
+            btn.style.animation = "shake 0.5s";
+        });
+        
+        // Reset after 2 seconds so user can see their score
         setTimeout(function() {
             document.body.style.background = "linear-gradient(135deg, #667eea 0%, #764ba2 100%)";
-        },1000);
-        reset();
+            allBtns.forEach(btn => {
+                btn.style.animation = "";
+            });
+            reset();
+        },2000);
     }
 }
 function btnPress(){
